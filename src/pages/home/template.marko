@@ -6,9 +6,8 @@ layout-use("src/layouts/default/template.marko") site=site active-section="home"
     layout-put into="body"
         h2.announcement
             ---
-            Marko v3 is here!
-            <a href="/blog/announcing-marko-v3/">Read the announcement</a> and
-            <a href="/docs/marko/what-is-new-marko-v3">find out what is new in Marko v3</a>
+            Marko v3 发布了!
+            <a href="/blog/announcing-marko-v3/">参阅文档</a>，<a href="/docs/marko/what-is-new-marko-v3">看看Marko v3有了哪些新功能！</a>
             ---
 
         div class="hero-bg"
@@ -16,7 +15,7 @@ layout-use("src/layouts/default/template.marko") site=site active-section="home"
                 div class="hero"
                     img src="/images/logo-large.png" alt="Marko" class="hero-img"
                     h2
-                        - A high performance templating engine and UI component building library from eBay
+                        - eBay开源的一个高性能的模版引擎和UI组件构建库
                     iframe src="https://ghbtns.com/github-btn.html?user=marko-js&repo=marko&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"
         div class="container"
             main
@@ -24,16 +23,15 @@ layout-use("src/layouts/default/template.marko") site=site active-section="home"
                     div class="marketing-col"
                         h3
                             a href="/docs"
-                                - Marko: HTML Templating
+                                - Marko: HTML模版
                         p
                             ---
-                            Marko is a <a href="https://github.com/marko-js/templating-benchmarks"><i>really</i> fast</a>
-                            and lightweight HTML-based templating engine that compiles
-                            templates to readable Node.js-compatible JavaScript modules, and it works on the server
-                            and in the browser. It supports streaming, async rendering and custom tags.
+                            Marko是一个<a href="https://github.com/marko-js/templating-benchmarks"><i>相当</i>快速</a>
+                            和轻量的基于HTML的模版引擎，它回将模版编译成可读的兼容Node.js的JavaScript模块，它即可以运行在服务器
+                            也可以运行在浏览器种。它支持流、异步渲染和自定义标签。
                             ---
                         a href="/try-online/" target="_blank" class="try-online"
-                            - Try Marko Online!
+                            - 在线试用Marko！
                             lasso-img [ src="src/assets/new-window.svg" width="16"
                                 height="16" ]
                         p
@@ -42,17 +40,16 @@ layout-use("src/layouts/default/template.marko") site=site active-section="home"
                     div class="marketing-col"
                         h3
                             a href="/docs/marko-widgets/"
-                                - Marko Widgets: UI Components
+                                - Marko Widgets: UI组件
                         p
                             ---
-                            Marko Widgets is a UI component building library that utilizes Marko templates as the view.
-                            It offers advanced features like DOM diffing/patching, batched updates, stateful widgets,
-                            declarative event binding and efficient event delegation.
+                            Marko Widgets是一个组件构建库，它利用Marko模版来作为视图。它提供来一些高级功能，例如：DOM对比／修补、批量更新、
+                            状态化组件、声明式的事件绑定和高效的事件委托。
                             ---
                         a [ href="/marko-widgets/try-online/" target="_blank"
                             class="try-online" ]
 
-                            - Try Marko Widgets Online!
+                            - 在线试用 Marko Widgets！
                             lasso-img [ src="src/assets/new-window.svg" width="16"
                                 height="16" ]
                         p
@@ -64,12 +61,12 @@ layout-use("src/layouts/default/template.marko") site=site active-section="home"
 
                 h2.syntax-heading
                     ---
-                    Clean and flexible syntax
+                    干净灵活的语法
                     ---
                 section class="marketing"
                     div.syntax-col
                         h3
-                            - HTML Syntax
+                            - HTML语法
                         app-markdown
                             ---
                             ```xml
@@ -97,7 +94,7 @@ layout-use("src/layouts/default/template.marko") site=site active-section="home"
                             ---
                     div.syntax-col
                         h3
-                            - Concise Syntax
+                            - 简易语法
                         app-markdown
                             ---
                             ```xml
@@ -117,7 +114,7 @@ layout-use("src/layouts/default/template.marko") site=site active-section="home"
                 div style="clear: both"
                 div.syntax-col
                     h3
-                        - Mixed Syntax
+                        - 混合语法
                     app-markdown
                         ---
                         ```xml
@@ -138,7 +135,7 @@ layout-use("src/layouts/default/template.marko") site=site active-section="home"
                         ---
                 div.syntax-col
                     h3
-                        - Marko Usage
+                        - Marko用例
                     app-markdown
                         ---
 
@@ -157,35 +154,35 @@ layout-use("src/layouts/default/template.marko") site=site active-section="home"
                 div style="clear: both"
                 div.marketing-col
                     h3
-                        - Marko Features
+                        - Marko功能
                     app-markdown
                         ---
-                        - [Extremely fast](https://github.com/marko-js/templating-benchmarks)
-                        - Streaming and async rendering
-                        - Progressive HTML rendering
-                        - Custom tags
-                        - Compiles to readable CommonJS modules
-                        - Server-side and client-side rendering
-                        - Use Marko with any web framework, including:
+                        - [相当快速](https://github.com/marko-js/templating-benchmarks)
+                        - 流和异步渲染
+                        - 渐进式HTML渲染
+                        - 自定义标签
+                        - 编译成可读的CommonJS模块
+                        - 服务端和浏览器端都可渲染
+                        - 和一些web框架一起试用，包括：
                             - [Express](/docs/marko/express/)
                             - [Koa](/docs/marko/koa/)
                             - [Hapi](/docs/marko/hapi/)
-                        - [Syntax highlighting in popular editors and IDEs](http://markojs.com/docs/marko/additional-resources/#tools)
+                        - [在流行的编辑器和IDE种语法高亮](http://markojs.com/docs/marko/additional-resources/#tools)
                         ---
                 div.marketing-col
                     h3
-                        - Marko Widgets Features
+                        - Marko Widgets功能
                     app-markdown
                         ---
-                        - Lightweight UI component building library
-                        - Marko used as the view
-                        - DOM diffing/patching using [morphdom](https://github.com/patrick-steele-idem/morphdom)
-                        - Batched updates
-                        - Stateful and stateless UI components
-                        - Declarative event binding
-                        - Efficient event delegation
-                        - Server-side and client-side rendering
-                        - Compatible with Redux
+                        - 轻量化的UI组件构建库
+                        - 利用Marko作为视图层
+                        - 利用[morphdom](https://github.com/patrick-steele-idem/morphdom)进行DOM对比／修补
+                        - 批量更新
+                        - 有状况和无状态的UI组件
+                        - 声明式的事件绑定
+                        - 高效的事件委托
+                        - 服务器端和浏览器端都可渲染
+                        - 兼容Redux
                         ---
                 div style="clear: both"
                 div class="videos"
@@ -196,11 +193,11 @@ layout-use("src/layouts/default/template.marko") site=site active-section="home"
                         a [ href="https://www.youtube.com/playlist?list=PLZUgs-F38XXQJBxA58UqnwTVMZS_uza_C"
                             target="_blank" ]
 
-                            - More Screencasts
+                            - 更多演示
 
                 hr
                 p
                     ---
-                    If you are looking for Marko v2 docs, please see:
-                    <a href="http://marko-v2.github.io/">Legacy Documentation: Marko v2</a>
+                    如果你在找Marko v2的文档，请参阅：
+                    <a href="http://marko-v2.github.io/">遗留文档： Marko v2</a>
                     ---
