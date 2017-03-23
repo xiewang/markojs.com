@@ -12,11 +12,11 @@ header id="header" w-bind
                         - ${navLink.title}
                 li class="nav-search"
                     i class="fa fa-search" w-onclick="handleToggleSearchClick"
-                    form [ action="https://google.com/search" method="get"
-                        class="search-form" ]
+                    form [ action="https://www.baidu.com/s" method="get" w-id="form"
+                        class="search-form" onsubmit="return false;" w-onsubmit="handleSearch"]
 
-                        input [ type="hidden" name="as_sitesearch"
-                            value=(data.site.searchUrl || data.site.url) ]
-                        input [ type="text" name="q" results="0" placeholder
+                        input [ type="hidden" name="word" w-id="word"
+                            value="site:"+(data.site.searchUrl || data.site.url) ]
+                        input [ type="text" name="word1" w-id="word1" results="0" placeholder
                             class="search-input" ]
         div style="clear: both"

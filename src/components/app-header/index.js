@@ -13,5 +13,9 @@ module.exports = require('marko-widgets').defineComponent({
         } else {
             input.classList.remove(expandedClass);
         }
+    },
+    handleSearch: function() {
+        this.getEl('word').value = this.getEl('word1').value + ' ' + this.getEl('word').value;
+        this.getEl('form').submit();
     }
 });
