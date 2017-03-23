@@ -9,7 +9,7 @@ var loadRoutes = require('./routes').loadRoutes;
 // and middleware
 var app = express();
 
-var port = 8080; // HTTP port to listen on
+var port = 8082; // HTTP port to listen on
 
 // We will be writing static JS and CSS bundles into the
 // "build/static" directory so use the Express static
