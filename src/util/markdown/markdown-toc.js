@@ -64,7 +64,7 @@ exports.create = function() {
         },
         toHTML: function() {
             // console.log('TOC: ' + JSON.stringify(stack[0], null, 4));
-            return '<p class="toc"><strong>Table of Contents</strong>' + root.toHTML() + '</p>';
+            return '<p class="toc"><strong>目录</strong>' + root.toHTML() + '</p>';
         }
     };
 };

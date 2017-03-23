@@ -3,8 +3,8 @@ var nodePath = require('path');
 var fs = require('fs');
 
 var docsDirs = {
-    'marko': nodePath.join(nodePath.dirname(require.resolve('marko/README.md')), 'docs'),
-    'marko-widgets': nodePath.join(nodePath.dirname(require.resolve('marko-widgets/README.md')), 'docs')
+    'marko': 'src/docs/marko',
+    'marko-widgets': 'src/docs/marko-widgets'
 };
 
 function checkDocs() {
