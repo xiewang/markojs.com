@@ -14,17 +14,17 @@
     },
     "navLinks": [
         {
-            "title": "Docs",
+            "title": "文档",
             "url": "/docs/",
             "name": "docs"
         },
         {
-            "title": "Community",
+            "title": "社区",
             "url": "/community/",
             "name": "community"
         },
         {
-            "title": "Blog",
+            "title": "博客",
             "url": "/blog/",
             "name": "blog"
         },
